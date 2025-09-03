@@ -61,7 +61,7 @@ class LoliMAT(loader.Module):
                 file=random_msg.media,
             )
             sent_message = await utils.answer(message, self.strings["done"])
-            await asyncio.sleep(3)
+            await asyncio.sleep(1)
             await self.client.delete_messages(message.chat_id, sent_message)
         except Exception as e:
             await utils.answer(message, self.strings["error"].format(e))
