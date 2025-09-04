@@ -1,8 +1,7 @@
 __version__ = 1, 0
+# meta developer = @hp_modules
 # name = Aneks
 # description = send aneks from AKB
-# meta developer = @halopedidol_pills
-
 import time
 import random
 import os
