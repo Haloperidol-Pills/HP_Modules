@@ -13,6 +13,7 @@ from .. import loader, utils
 logger = logging.getLogger("simplename")
 
 entity = ("https://t.me/baneksru")
+limit = 300
 
 @loader.tds
 class Aneks(loader.Module):
@@ -23,6 +24,15 @@ class Aneks(loader.Module):
 		"error": "ааааа ашибка 00000",
 		"nomes": "hz ashibka"
 			}
+		
+	def __init__(self):
+        self.config = loader.ModuleConfig(
+            loader.ConfigValue(
+            "messages count",
+            300,
+            "amount of aneks, that loads for send",
+            validator=loader.validators.Integer(minimum=10),
+            )
 		
 	@loader.command(ru_doc="случайный анек из АКБ")
 	async def anek(self, message):
@@ -45,11 +55,4 @@ class Aneks(loader.Module):
 	        )
 	    time.sleep(0.3)
 	    await self.client.delete_messages(message.chat_id, otpravka)
-    def __init__(self):
-        self.config = loader.ModuleConfig(
-            loader.ConfigValue(
-            "messages count",
-            300,
-            "amount of aneks, that loads for send",
-            validator=loader.validators.Integer(minimum=10),
-            )
+	        
