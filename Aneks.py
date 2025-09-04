@@ -1,4 +1,4 @@
-__version__ = 1, 1
+__version__ = 1, 0
 # name = Aneks
 # description = send aneks from AKB
 # meta developer = @halopedidol_pills
@@ -46,12 +46,3 @@ class Aneks(loader.Module):
 	        )
 	    time.sleep(0.3)
 	    await self.client.delete_messages(message.chat_id, otpravka)
-		
-    def __init__(self):
-        self.config = loader.ModuleConfig(
-		    loader.ConfigValue(
-            "messages count",
-            300,
-            "amount of aneks, that loads for send",
-            validator=loader.validators.Integer(minimum=10),
-            ))
