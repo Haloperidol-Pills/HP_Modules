@@ -45,7 +45,7 @@ class Aneks(loader.Module):
 	        )
 	    time.sleep(0.3)
 	    await self.client.delete_messages(message.chat_id, otpravka)
-	        def __init__(self):
+    def __init__(self):
         self.config = loader.ModuleConfig(
             loader.ConfigValue(
             "messages count",
