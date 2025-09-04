@@ -41,7 +41,7 @@ class AKB(loader.Module):
 	    otpravka = await utils.answer(message, self.strings("sending"))
 	    
 	    try:
-	        mes = await self.client.get_messages(entity, limit=300)
+	        mes = await self.client.get_messages(entity, limit=500)
 	    except Exception as e:
 	        return await utils.answer(message, self.strings("error"))
 	        
