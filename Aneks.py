@@ -27,7 +27,6 @@ class Aneks(loader.Module):
 		
 	def __init__(self):
         self.config = loader.ModuleConfig(
-            loader.ConfigValue(
             "messages count",
             300,
             "amount of aneks, that loads for send",
