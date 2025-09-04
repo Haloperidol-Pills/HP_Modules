@@ -27,11 +27,12 @@ class Aneks(loader.Module):
 		
 	def __init__(self):
         self.config = loader.ModuleConfig(
+		    loader.ConfigValue(
             "messages count",
             300,
             "amount of aneks, that loads for send",
             validator=loader.validators.Integer(minimum=10),
-            )
+            ))
 		
 	@loader.command(ru_doc="случайный анек из АКБ")
 	async def anek(self, message):
