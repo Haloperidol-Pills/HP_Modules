@@ -19,7 +19,7 @@ class Aneks(loader.Module):
 	"""Рандомные анекдоты из акб"""
 	strings = {
 	    "name": "Aneks", 
-		"sending": "отправляю несмешной анек", 
+		"sending": "Внимание, анекдот!", 
 		"error": "ааааа ашибка 00000",
 		"nomes": "hz ashibka"
 			}
@@ -45,3 +45,11 @@ class Aneks(loader.Module):
 	        )
 	    time.sleep(0.3)
 	    await self.client.delete_messages(message.chat_id, otpravka)
+	        def __init__(self):
+        self.config = loader.ModuleConfig(
+            loader.ConfigValue(
+            "messages count",
+            300,
+            "amount of aneks, that loads for send",
+            validator=loader.validators.Integer(minimum=10),
+            )
