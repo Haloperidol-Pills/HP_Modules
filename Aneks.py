@@ -25,8 +25,6 @@ class Aneks(loader.Module):
 		"nomes": "hz ashibka"
 			}
 		
-	
-		
 	@loader.command(ru_doc="случайный анек из АКБ")
 	async def anek(self, message):
 	    """random akb anek"""
