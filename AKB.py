@@ -1,7 +1,7 @@
+# meta developer = @hp_modules
 # name = AKB
 # description = sends aneks from AKB
 # Author = @hp_modules
-# meta developer = @hp_modules
 # Scope = AKB
 __version__ = (1, 0)
 
