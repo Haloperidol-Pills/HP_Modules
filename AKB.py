@@ -1,9 +1,9 @@
-# meta developer: @hp_modules
-# name: AKB
-# description: sends aneks from AKB
-# Author: @hp_modules
-# Scope: AKB
-__version__ = (1, 0)
+# name = AKB
+# description = sends aneks from AKB
+# Author = @hp_modules
+# meta developer = @hp_modules
+# Scope = AKB
+__version__ = 1, 0, 0
 
 import time
 import random
@@ -34,14 +34,14 @@ class AKB(loader.Module):
 		
 	@loader.command(
 	ru_doc="вкинуть анекдот из АКБ",
-	en_doc="Send anek from AKB"
+	en_doc="Send anek from AKB",
 	)
 	async def akb(self, message):
-	    
+	    """Вкинуть анекдотик из АКБ"""
 	    otpravka = await utils.answer(message, self.strings("sending"))
 	    
 	    try:
-	        mes = await self.client.get_messages(entity, limit=500)
+	        mes = await self.client.get_messages(entity, limit=300)
 	    except Exception as e:
 	        return await utils.answer(message, self.strings("error"))
 	        
