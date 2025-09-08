@@ -1,4 +1,4 @@
-__version__ = 2, 0, 0
+__version__ = 2, 0, 1
 # name: foundation
 # meta developer: @hp_modules
 # description: sends NSFW pics from foundation
@@ -41,7 +41,7 @@ class Foundation(loader.Module):
         send = await utils.answer(message, self.strings("sending"))
     
         try:
-            mes = await self.client.get_messages(entity, limit=9999)
+            mes = await self.client.get_messages(entity, limit=4269)
         except Exception:
             return await utils.answer(message, self.strings("error")), logger.error("An error! Probably, your request to enter Foundation is pending and wasn't accepted yet, if you didn't sent request, you can do this by link:" f"{link}")
 	        
