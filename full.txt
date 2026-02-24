@@ -1,2 +1,5 @@
 AKB
 Foundation
+Voices
+Spoilermod
+KeyboardSwitcher
