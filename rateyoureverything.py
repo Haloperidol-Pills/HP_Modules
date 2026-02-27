@@ -12,7 +12,7 @@ class RateYourEverything(loader.Module):
     strings = {"name": "RateYourEverything"}
 
     async def ratecmd(self, message):
-        """Оценка от специалиста: команда ответом на сообщение"""
+        """Оценка от высококвалифицированного специалиста во всех областях"""
         channel_entity = "https://t.me/yahzchtopridumat"
         channel_messages = await self.client.get_messages(channel_entity, limit=1)
 
