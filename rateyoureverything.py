@@ -1,6 +1,8 @@
 # Name: RateYourEverything
 # Meta Developer: @HP_Modules
 # Author: @HaloperidolPills
+# Meta Banner: https://raw.githubusercontent.com/Haloperidol-Pills/metaassets/refs/heads/main/ratebanner.png
+# Meta Pic: https://raw.githubusercontent.com/Haloperidol-Pills/metaassets/refs/heads/main/ratebanner.png
 __version__ = 1,0,0
 from .. import loader, utils
 import random
