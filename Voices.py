@@ -1,7 +1,9 @@
 # name: Voices
-# meta developer: @HP_Modules
+# meta developer: @HaloperidolPills
 # author: @HaloperidolPills
-__version__ = 1, 0, 0
+# Meta Banner: https://raw.githubusercontent.com/Haloperidol-Pills/metaassets/refs/heads/main/voices.png
+# Meta Pic: https://raw.githubusercontent.com/Haloperidol-Pills/metaassets/refs/heads/main/voices.png
+__version__ = 1, 0, 1
 
 from .. import loader, utils
 
@@ -80,6 +82,54 @@ class Voices(loader.Module):
         await message.client.send_file(
             message.to_id,
             "https://t.me/iluglhjfjky/7",
+            voice_note = True,
+            reply_to = reply.id if reply else None,
+        )
+        return
+
+    async def goodnightcmd(self, message):
+        """Спокойной ночи"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/iluglhjfjky/8",
+            voice_note = True,
+            reply_to = reply.id if reply else None,
+        )
+        return
+
+    async def zloycmd(self, message):
+        """Чеченские ругательства"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/iluglhjfjky/10",
+            voice_note = True,
+            reply_to = reply.id if reply else None,
+        )
+        return
+
+    async def ustalcmd(self, message):
+        """Легендарная игра от создателей гта5"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/iluglhjfjky/11",
+            voice_note = True,
+            reply_to = reply.id if reply else None,
+        )
+        return
+
+    async def casinocmd(self, message):
+        """Ёбаный рот этого казино"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/iluglhjfjky/12",
             voice_note = True,
             reply_to = reply.id if reply else None,
         )
