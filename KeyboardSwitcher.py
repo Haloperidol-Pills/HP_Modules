@@ -1,7 +1,7 @@
 # name: KeyBoardSwitcher
 # meta developer: @hp_modules
 # author: @haloperidolpills
-__version__ = 1,0,0
+__version__ = 1,0,1
 from .. import loader, utils
 
 class KeyBoardSwitcher(loader.Module):
@@ -28,8 +28,8 @@ class KeyBoardSwitcher(loader.Module):
         else:
             return
 
-        en_layout = "qwertyuiop[]asdfghjkl;'zxcvbnm,./QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>?@#$^&"
-        ru_layout = "йцукенгшщзхъфывапролджэячсмитьбю.ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ,№?;:?"
+        en_layout = "`~qwertyuiop[]asdfghjkl;'zxcvbnm,./QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>?@#$^&"
+        ru_layout = "ёЁйцукенгшщзхъфывапролджэячсмитьбю.ЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ,№?;:?"
 
         en_to_ru = str.maketrans(en_layout, ru_layout)
         ru_to_en = str.maketrans(ru_layout, en_layout)
