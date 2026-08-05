@@ -1,9 +1,9 @@
 # name: Voices
-# meta developer: @HaloperidolPills
+# meta developer: @HP_modules
 # author: @HaloperidolPills
 # Meta Banner: https://raw.githubusercontent.com/Haloperidol-Pills/metaassets/refs/heads/main/voices.png
 # Meta Pic: https://raw.githubusercontent.com/Haloperidol-Pills/metaassets/refs/heads/main/voices.png
-__version__ = 1, 0, 1
+__version__ = 1, 0, 2
 
 from .. import loader, utils
 
@@ -16,7 +16,7 @@ class Voices(loader.Module):
 
     @loader.command()
     async def kisicmd(self, message):
-        """киси киси мяу мяу"""
+        """Киси киси мяу мяу"""
         reply = await message.get_reply_message()
         await message.delete()
         await message.client.send_file(
@@ -28,7 +28,7 @@ class Voices(loader.Module):
         return
 
     async def creditcmd(self, message):
-        """social credit siren"""
+        """Social credit siren"""
         reply = await message.get_reply_message()
         await message.delete()
         await message.client.send_file(
@@ -130,6 +130,66 @@ class Voices(loader.Module):
         await message.client.send_file(
             message.to_id,
             "https://t.me/iluglhjfjky/12",
+            voice_note = True,
+            reply_to = reply.id if reply else None,
+        )
+        return
+        
+    async def golosovaniecmd(self, message):
+        """Голосование"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/iluglhjfjky/13",
+            voice_note = True,
+            reply_to = reply.id if reply else None,
+        )
+        return
+        
+    async def nuclearcmd(self, message):
+        """Legalize nuclear bombs"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/iluglhjfjky/14",
+            voice_note = True,
+            reply_to = reply.id if reply else None,
+        )
+        return
+
+    async def evreicmd(self, message):
+        """Во всем виноваты евреи"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/iluglhjfjky/16",
+            voice_note = True,
+            reply_to = reply.id if reply else None,
+        )
+        return
+        
+    async def ohayocmd(self, message):
+        """Охаёшечки-даттебайошечки"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/iluglhjfjky/17",
+            voice_note = True,
+            reply_to = reply.id if reply else None,
+        )
+        return
+    
+    async def golosovanieendcmd(self, message):
+        """Голосование завершено"""
+        reply = await message.get_reply_message()
+        await message.delete()
+        await message.client.send_file(
+            message.to_id,
+            "https://t.me/iluglhjfjky/18",
             voice_note = True,
             reply_to = reply.id if reply else None,
         )
