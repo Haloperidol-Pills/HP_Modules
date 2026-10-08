@@ -75,7 +75,7 @@ EN_COMMON_WORDS = frozenset({
 })
 
 class KeyBoardSwitcher(loader.Module):
-    '''Модуль для смены раскладки клавиатуры'''
+    """Модуль для смены раскладки клавиатуры"""
     strings = {"name": "KeyBoardSwitcher"}
 
     en_layout = "`~qwertyuiop[]asdfghjkl;'zxcvbnm,./QWERTYUIOP{}ASDFGHJKL:\"ZXCVBNM<>?@#$^&"
